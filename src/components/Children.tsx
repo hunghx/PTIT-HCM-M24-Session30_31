@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 type PropsType = {
     name : string
 }
-export default function Children({name : string}) {
+
+export default function Children( {name}: PropsType) {
    const [count , setCount] = useState(0); // destructoring 
   return (
     <div>
